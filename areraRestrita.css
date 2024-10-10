@@ -1,0 +1,50 @@
+/* Definição de fontes */
+@font-face {
+    font-family: LevenimBold;
+    src: url("./Font/levenim-mt-bold.ttf");
+}
+
+@font-face {
+    font-family: Levenim;
+    src: url("./Font/levenim-mt-2.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 73.75vw;
+    height: auto;
+    flex: 1;
+    padding: 40px;
+}
+
+.txtHome {
+    font-size: 2rem;
+    color: #412267;
+    font-family: LevenimBold;
+}
+
+.descrHome {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+    font-family: Levenim;
+}
+
+.containerImg{
+    position: absolute;
+    top: 48vh;
+    right: 25vw;
+    justify-content: center;
+}
+
+.imgHome{
+    width: 35vw;
+}

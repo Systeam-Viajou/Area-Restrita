@@ -1,0 +1,43 @@
+/* Definição de fontes */
+@font-face {
+    font-family: LevenimBold;
+    src: url("./Font/levenim-mt-bold.ttf");
+}
+
+@font-face {
+    font-family: Levenim;
+    src: url("./Font/levenim-mt-2.ttf");
+}
+
+header{
+    display: flex;
+    background-color: #412267;
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding-top: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 14px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1
+}
+
+.logoViajou{
+    width: 7vw;
+}
+
+.btLogout{
+    background-color: #8E70D6;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 5vw;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: LevenimBold;
+}
