@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área restrita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="botaoTema.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body class="light-mode"> 
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html"><img class="imgLogo" src="./assets/logoViajou.svg" alt="Logo Viajou"></a>
+
+            <!-- Ícone do menu hambúrguer -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="menu" id="menu">
+                <li class="item"><a class="link" href="./dashs.html">Avaliação do app</a></li>
+                <li class="item"><a class="link" href="./dashs.html">Pesquisa de perfil</a></li>
+                <li class="item"><a class="link" href="./dashs.html">Dados brutos</a></li>
+                <li class="item"><button class="btLogout">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="containerTema">
+            <button class="btTema" id="btSol" onclick="toggleTema('claro')">
+                <img class="imgTema" src="./assets/iconSol.svg" alt="Sol">
+            </button>
+        
+            <button class="btTema" id="btLua" onclick="toggleTema('escuro')">
+                <img class="imgTema" src="./assets/iconlua.svg" alt="Lua">
+            </button>
+        </div>      
+        
+        <div class="containerHome">
+            <div class="containerTextHome">
+                <h1 class="titleHome">Olá admin!</h1>
+                <p class="textHome"><strong>Dashboards</strong> e <strong>Informações</strong> sobre o seu andamento no <strong>Viajou</strong>.</p>
+            </div>
+            <img class="imgHomePeople" src="./assets/imgHomePeople.svg" alt="">
+        </div>
+    </main>
+</body>
+</html>

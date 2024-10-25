@@ -1,27 +1,19 @@
 /* Definição de fontes */
 @font-face {
     font-family: LevenimBold;
-    src: url("./Font/levenim-mt-bold.ttf");
+    src: url("./font/levenim-mt-bold.ttf");
 }
 
 @font-face {
     font-family: Levenim;
-    src: url("./Font/levenim-mt-2.ttf");
-}
-
-*{
-    margin: 0;
-    padding: 0;
+    src: url("./font/levenim-mt-2.ttf");
 }
 
 .containerDescDash {
-    position: absolute;
-    top: 10vh;
-    right: 0;
-    width: 73.75vw;
+    width: 75vw;
     height: auto;
-    flex: 1;
-    padding: 40px;
+    padding: 2rem;
+    padding-top: 0;
 }
 
 .titleDash {
@@ -39,18 +31,32 @@
 }
 
 .containerDash{
-    width: 10vw;
-    position: relative;
+    width: 100%;
+    margin-bottom: 7vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    top: 40vh;
-    left: 35vw;
-}
-
-#containerDash3{
-    top: 35vh;
 }
 
 .iframeDash{
-    width: 50vw;
-    height: 65vh;
+    width: 70vw;
+    height: 90vh;
+}
+
+@media (max-width: 768px) {
+    .containerDescDash {
+        width: 100vw;
+    }
+
+    .containerDash{
+        width: 100vw;
+    }
+
+    .titleDash {
+        font-size: 28px;
+    }
+
+    .descrDash {
+        font-size: 15px;
+    }
 }

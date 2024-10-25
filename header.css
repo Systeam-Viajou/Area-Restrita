@@ -1,43 +1,129 @@
 /* Definição de fontes */
 @font-face {
     font-family: LevenimBold;
-    src: url("./Font/levenim-mt-bold.ttf");
+    src: url("./font/levenim-mt-bold.ttf");
 }
 
 @font-face {
     font-family: Levenim;
-    src: url("./Font/levenim-mt-2.ttf");
+    src: url("./font/levenim-mt-2.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
+    background-color: #6849B3;
+    color: #fff;
+    padding: 0.9rem;
     display: flex;
-    background-color: #412267;
-    position: fixed;
-    width: 100%;
-    color: white;
-    padding-top: 14px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 14px;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1
+    justify-content: center;
 }
 
-.logoViajou{
+.navbar{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgLogo{
     width: 7vw;
 }
 
-.btLogout{
-    background-color: #8E70D6;
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.link{
     color: white;
-    border: none;
-    border-radius: 7px;
-    padding: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-right: 5vw;
+    text-decoration: none;
+    font-family: LevenimBold;
+    font-size: 1.1rem;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.link:active{
+    color: #cab5fb;
+}
+
+.btLogout{
+    width: 7vw;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1.5px solid white;
+    padding: 0.4rem;
+    margin-left: 15vw;
+    border-radius: 5px;
+    font-family: Levenim;
     font-size: 1rem;
     cursor: pointer;
-    font-family: LevenimBold;
+}
+.btLogout:hover{
+    background-color: white;
+    color: #6849B3;
+}
+.btLogout:active{
+    background-color: #cebdf7;
+    color: white;
+    border: 1.5px solid #cebdf7;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        background-color: #6849B3;
+        padding: 1rem;
+        width: 100%;
+        align-items: center;
+        border-top: 1px solid #a07ef7; 
+    }
+
+    .menu-active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .imgLogo{
+        width: 18vw;
+    }
+
+    .btLogout{
+        margin: 0;
+        width: 30vw;
+    }
 }
