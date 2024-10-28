@@ -16,17 +16,16 @@
 }
 
 header{
-    background-color: #6849B3;
     color: #fff;
     padding: 0.9rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.navbar{
-    width: 98%;
+.navbar {
+    width: 90vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
 }
 
@@ -48,10 +47,11 @@ header{
     border-radius: 2px;
 }
 
-.menu{
+.menu {
     list-style: none;
     display: flex;
     gap: 5vw;
+    margin: 0 auto; 
 }
 
 .item{
@@ -72,31 +72,13 @@ header{
     color: #cab5fb;
 }
 
-.btLogout{
-    width: 7vw;
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    border: 1.5px solid white;
-    padding: 0.4rem;
-    margin-left: 15vw;
-    border-radius: 5px;
-    font-family: Levenim;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.btLogout:hover{
-    background-color: white;
-    color: #6849B3;
-}
-.btLogout:active{
-    background-color: #cebdf7;
-    color: white;
-    border: 1.5px solid #cebdf7;
-}
-
-
 /* Responsividade */
 @media (max-width: 768px) {
+
+    .navbar{
+        justify-content: space-between;
+    }
+
     .menu {
         display: none;
         flex-direction: column;
@@ -122,8 +104,7 @@ header{
         width: 18vw;
     }
 
-    .btLogout{
-        margin: 0;
-        width: 30vw;
+    .hide-mobile {
+        display: none;
     }
 }
