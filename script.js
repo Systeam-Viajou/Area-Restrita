@@ -6,7 +6,6 @@ function toggleMenu(event) {
     }
 }
 
-// Função para alternar tema, agora usando o event como argumento opcional
 function toggleTema(tema, event) {
     const body = document.body;
     const btSol = document.getElementById('btSol');
