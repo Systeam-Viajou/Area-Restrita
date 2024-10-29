@@ -1,12 +1,12 @@
 /* Definição de fontes */
 @font-face {
     font-family: LevenimBold;
-    src: url("./font/levenim-mt-bold.ttf");
+    src: url("./Font/levenim-mt-bold.ttf");
 }
 
 @font-face {
     font-family: Levenim;
-    src: url("./font/levenim-mt-2.ttf");
+    src: url("./Font/levenim-mt-2.ttf");
 }
 
 .containerHome{
