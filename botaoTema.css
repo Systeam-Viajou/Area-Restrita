@@ -1,0 +1,112 @@
+.containerTema {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2vh;
+    margin-right: 2vw;
+}
+
+.btTema {
+    background-color: #D9D9D9;
+    border: none;
+    width: 4vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btSol {
+    border-radius: 6px 0 0 6px;
+    background-color: #BEA4FF; 
+}
+
+#btLua {
+    border-radius: 0 6px 6px 0;
+    background-color: #D9D9D9; 
+}
+
+
+/* Estilos para o tema claro */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode header {
+    background-color: #6849B3; 
+}
+
+.light-mode .titleHome{
+    color: #412267;
+}
+
+.light-mode .textHome {
+    color: #333; 
+}
+
+.light-mode strong{
+    color: #8D0EC8;
+}
+
+.light-mode .titleDash{
+    color: #412267;
+}
+
+.light-mode .descrDash {
+    color: #333; 
+}
+
+
+
+/* Estilos para o tema escuro */
+.dark-mode {
+    background-color: #272727;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #412267; 
+}
+
+.dark-mode .titleHome{
+    color: #8E3DDF; 
+}
+
+.dark-mode .textHome {
+    color: white; 
+}
+
+.dark-mode strong{
+    color: #DA8AFF;
+}
+
+.dark-mode .titleDash {
+    color: #8E3DDF; 
+}
+
+.dark-mode .descrDash {
+    color: white; 
+}
+
+@media (max-width: 768px) {
+
+    .dark-mode .menu{
+        background-color: #412267
+    }
+
+    .btTema {
+        width: 8vw;
+        height: 5vh;
+    }
+
+    .imgTema{
+        width: 4.5vw;
+    }
+    
+    .containerTema{
+        margin-right: 4vw;
+    }
+}

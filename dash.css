@@ -1,0 +1,70 @@
+/* Definição de fontes */
+@font-face {
+    font-family: LevenimBold;
+    src: url("./Font/levenim-mt-bold.ttf");
+}
+
+@font-face {
+    font-family: Levenim;
+    src: url("./Font/levenim-mt-2.ttf");
+}
+
+.containerDescDash {
+    width: 55vw;
+    height: auto;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.titleDash {
+    font-size: 32px;
+    font-family: LevenimBold;
+}
+
+.descrDash {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 3vh;
+    font-family: Levenim;
+}
+
+.containerDash{
+    width: 100%;
+    margin-bottom: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iframeDash{
+    width: 70vw;
+    height: 90vh;
+}
+
+@media (max-width: 768px) {
+    .containerDescDash {
+        width: 98vw;
+        padding: 0;
+        margin-left: 2vw;
+    }
+
+    .containerDash{
+        width: 98vw;
+        margin-bottom: 7vh;
+        margin-left: 2vw;
+        margin-top: 3vh;
+    }
+
+    .titleDash {
+        font-size: 26px;
+    }
+
+    .descrDash {
+        font-size: 14px;
+    }
+
+    .iframeDash{
+        width: 98vw;
+        height: 225vh;
+    }
+}

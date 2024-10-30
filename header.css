@@ -1,0 +1,111 @@
+/* Definição de fontes */
+@font-face {
+    font-family: LevenimBold;
+    src: url("./Font/levenim-mt-bold.ttf");
+    
+}
+
+@font-face {
+    font-family: Levenim;
+    src: url("./Font/levenim-mt-2.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: #fff;
+    padding: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    width: 90vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.imgLogo{
+    width: 7vw;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+    margin: 0 auto; 
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-family: LevenimBold;
+    font-size: 1.1rem;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.link:active{
+    color: #cab5fb;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        background-color: #6849B3;
+        padding: 1rem;
+        width: 100%;
+        align-items: center;
+        border-top: 1px solid #a07ef7; 
+    }
+
+    .menu-active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .imgLogo{
+        width: 18vw;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+}
