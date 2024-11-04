@@ -1,10 +1,32 @@
 function toggleMenu(event) {
     const menu = document.getElementById("menu");
-    menu.classList.toggle("menu-active");
+    
+    if (menu) {
+        menu.classList.toggle("menu-active");
+    }
+
+    // Log para depuração
     if (event) {
         console.log("Menu clicado:", event.target);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    const menu = document.querySelector(".menu");
+
+    function ajustarMenu() {
+        if (header && menu) {
+            const headerHeight = header.offsetHeight;
+            menu.style.top = `${headerHeight}px`;
+        }
+    }
+
+    // Define a posição do menu ao carregar a página e ao redimensionar
+    ajustarMenu();
+    window.addEventListener("resize", ajustarMenu);
+});
+
 
 function toggleTema(tema, event) {
     const body = document.body;
