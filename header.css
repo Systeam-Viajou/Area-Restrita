@@ -79,19 +79,25 @@ header{
     .navbar{
         justify-content: space-between;
     }
-
+    
+    :root {
+        --header-height: 60px; /* Valor padrão, será substituído pelo JavaScript */
+    }
+    
     .menu {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 12vh;
-        right: 0;
+        position: fixed;
+        top: calc(var(--header-height) + 1rem); /* Usando a variável */
+        left: 0;
         background-color: #6849B3;
         padding: 1rem;
         width: 100%;
         align-items: center;
-        border-top: 1px solid #a07ef7; 
+        border-top: 1px solid #a07ef7;
+        z-index: 10;
     }
+    
 
     .menu-active {
         display: flex;
@@ -105,7 +111,4 @@ header{
         width: 18vw;
     }
 
-    .hide-mobile {
-        display: none;
-    }
 }

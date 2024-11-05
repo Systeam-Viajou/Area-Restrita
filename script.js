@@ -1,10 +1,32 @@
 function toggleMenu(event) {
     const menu = document.getElementById("menu");
-    menu.classList.toggle("menu-active");
+    
+    if (menu) {
+        menu.classList.toggle("menu-active");
+    }
+
+    // Log para depuração
     if (event) {
         console.log("Menu clicado:", event.target);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    const menu = document.querySelector(".menu");
+
+    function ajustarMenu() {
+        if (header && menu) {
+            const headerHeight = header.offsetHeight;
+            menu.style.top = `${headerHeight}px`;
+        }
+    }
+
+    // Define a posição do menu ao carregar a página e ao redimensionar
+    ajustarMenu();
+    window.addEventListener("resize", ajustarMenu);
+});
+
 
 function toggleTema(tema, event) {
     const body = document.body;
@@ -63,7 +85,9 @@ const dashboards = {
     avaliacao: {
         titulo: "Avaliação do app",
         descricao: "Esse painel exibe a avaliação do aplicativo, com dados atualizados em tempo real conforme os usuários compartilham seus feedbacks.",
-        desktopUrl: "https://app.powerbi.com/reportEmbed?reportId=d020c712-32f0-4269-abeb-145e5cf22cea&autoAuth=true&ctid=b148f14c-2397-402c-ab6a-1b4711177ac0"
+        desktopUrl: "https://app.powerbi.com/reportEmbed?reportId=d020c712-32f0-4269-abeb-145e5cf22cea&autoAuth=true&ctid=b148f14c-2397-402c-ab6a-1b4711177ac0",
+        mobileUrl: "https://app.powerbi.com/reportEmbed?reportId=d020c712-32f0-4269-abeb-145e5cf22cea&autoAuth=true&ctid=b148f14c-2397-402c-ab6a-1b4711177ac0"
+        // Colocar a url da dash do 3° ano
     },
     pesquisa: {
         titulo: "Pesquisa de usuário",
