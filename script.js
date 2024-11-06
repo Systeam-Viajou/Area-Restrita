@@ -92,8 +92,8 @@ const dashboards = {
     pesquisa: {
         titulo: "Pesquisa de usuário",
         descricao: "Esse painel apresenta dados sobre a pesquisa realizada com os usuários, oferecendo insights sobre suas preferências e comportamentos.",
-        desktopUrl: "https://app.powerbi.com/reportEmbed?reportId=01a3ce57-7e18-490a-86bc-ae3dbac4371a&autoAuth=true&ctid=b148f14c-2397-402c-ab6a-1b4711177ac0",
-        mobileUrl: "https://app.powerbi.com/reportEmbed?reportId=6adb1f84-cd23-48d9-af7c-bd47e4ef9c12&autoAuth=true&ctid=b148f14c-2397-402c-ab6a-1b4711177ac0"
+        desktopUrl: "https://app.powerbi.com/view?r=eyJrIjoiZTI3ZDAxYjYtZGVkMC00NDQ0LWE1MGEtOTJkY2FlN2I4OTIxIiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9",
+        mobileUrl: "https://app.powerbi.com/view?r=eyJrIjoiZjNmZDNmYjgtZGJiYy00MTg0LTgzMjgtOTAzNDU3N2M3MGJmIiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9&pageName=c6f7b022076ed25b0be0"
     }
 };
 
