@@ -85,8 +85,8 @@ const dashboards = {
     avaliacao: {
         titulo: "Avaliação do app",
         descricao: "Esse painel exibe a avaliação do aplicativo, com dados atualizados em tempo real conforme os usuários compartilham seus feedbacks.",
-        desktopUrl: "https://app.powerbi.com/view?r=eyJrIjoiZTUyY2MxMzItNjc4YS00MWY5LTg3MmQtNjFmMDBkNDdjMDg5IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9",
-        mobileUrl: "https://app.powerbi.com/view?r=eyJrIjoiZTJhNzZmMGItMDczMS00ZTFjLTg3MWQtNTUyNWMyNThlZjAzIiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
+        desktopUrl: "https://app.powerbi.com/view?r=eyJrIjoiYzQyYWM2MWEtNTBmNy00ODM3LTgzOWItMmM0Yzc4YTE0Y2NiIiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9",
+        mobileUrl: "https://app.powerbi.com/view?r=eyJrIjoiZTM2YTZjNzctYTZjMC00NDYxLWE2ZjQtN2E3Yjk5NDk0MmE3IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
     },
     pesquisa: {
         titulo: "Pesquisa de usuário",
